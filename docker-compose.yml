@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  mongo_db:
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: proxy_db
+    ports:
+      - '27017:27017'
