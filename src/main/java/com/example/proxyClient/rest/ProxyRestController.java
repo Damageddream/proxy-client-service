@@ -28,4 +28,9 @@ public class ProxyRestController {
         return proxyService.addProduct(product);
     }
 
+    @GetMapping("/{id}")
+    public ProductDto getProduct(Long id) {
+        return proxyService.getProduct(id);
+    }
+
 }

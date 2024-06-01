@@ -5,6 +5,7 @@ import com.example.proxyClient.dto.ProductDto;
 import com.example.proxyClient.dto.enums.ProductTypes;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -20,4 +21,7 @@ public interface ProductClient {
     List<ProductDto> getProducts(@RequestParam(required = false) Optional<ProductTypes> productType);
     @PostMapping
     ProductDto addProduct(ProductDto product);
+
+    @GetMapping("/{id}")
+    ProductDto getProduct(@PathVariable("id") Long id);
 }

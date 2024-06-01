@@ -26,4 +26,9 @@ public class ProxyServiceImpl implements ProxyService {
     public ProductDto addProduct(ProductDto product) {
         return productClient.addProduct(product);
     }
+
+    @Override
+    public ProductDto getProduct(Long id) {
+        return productClient.getProduct(id);
+    }
 }

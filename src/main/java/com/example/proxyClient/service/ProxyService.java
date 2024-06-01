@@ -9,4 +9,6 @@ import java.util.Optional;
 public interface ProxyService {
     List<ProductDto> findAllProducts(Optional<ProductTypes> productType);
     ProductDto addProduct(ProductDto product);
+
+    ProductDto getProduct(Long id);
 }
