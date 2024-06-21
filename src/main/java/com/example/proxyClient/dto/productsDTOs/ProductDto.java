@@ -1,4 +1,4 @@
-package com.example.proxyClient.dto;
+package com.example.proxyClient.dto.productsDTOs;
 
 import com.example.proxyClient.dto.enums.ProductTypes;
 import lombok.EqualsAndHashCode;

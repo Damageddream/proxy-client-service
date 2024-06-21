@@ -1,6 +1,6 @@
 package com.example.proxyClient.integration;
 
-import com.example.proxyClient.dto.ProductDto;
+import com.example.proxyClient.dto.productsDTOs.ProductDto;
 import com.example.proxyClient.remote.ProductClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
